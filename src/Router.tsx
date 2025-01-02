@@ -6,13 +6,11 @@ import { Home } from "./Pages/Home";
 
 export function Router() {
     return (
-        <HashRouter>
             <Routes>
                 <Route path="/" element={<DefaultLayout />}>
                     <Route path="/" element={<Home />} />
                     <Route path="/history" element={<History />} />
                 </Route>
             </Routes>
-        </HashRouter>
     );
 }
